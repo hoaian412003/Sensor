@@ -10,5 +10,5 @@ sudo apt-get update && sudo apt-get install telegraf
 echo "Installed telegraf"
 
 echo "Copying file winery-agg.conf to $agg_conf_place"
-cp winery-agg.conf $agg_conf_place
+sudo cp winery-agg.conf $agg_conf_place
 echo "Copy done !"
