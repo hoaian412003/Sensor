@@ -13,7 +13,7 @@ fi
 
 cat << EOF > winery-agg.conf
 [agent]
-      hostname = "$agg_conf_name agg"
+      hostname = "$agg_conf_name"
   flush_interval = "10s"
   interval = "10s"
 
