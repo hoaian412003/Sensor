@@ -3,7 +3,7 @@
 
 agg_conf_name=$1
 
-if [ -z ${agg_conf_name} ];
+if [ -z ${agg_conf_name+x} ];
 then
     echo "Invalid command, unknow first parameter. Using: ./sensor.install.sh <agg_config_name>"
 else
@@ -41,7 +41,7 @@ cat << EOF > winery-agg.conf
   urls = [ "http://54.254.47.35:8086" ]
   username = "telegraf2"
   password = "5aMWYbKGUv3Q7A4U"
-EOF 
+EOF
 
 echo "Created file agg.conf !!!"
 
